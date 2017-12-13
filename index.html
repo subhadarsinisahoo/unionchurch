@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+<link href="images/apple-touch-startup-image-320x460.png" media="(device-width: 320px)" rel="apple-touch-startup-image">
+<link href="images/apple-touch-startup-image-640x920.png" media="(device-width: 320px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+<title>Union Church Online</title>
+<link rel="stylesheet" href="css/framework7.css">
+<link rel="stylesheet" href="style.css">
+<link type="text/css" rel="stylesheet" href="css/swipebox.css" />
+<link type="text/css" rel="stylesheet" href="css/animations.css" />
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,900' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="datajs/globalvar.js"></script>
+<script type="text/javascript" src="datajs/leftmenu.js"></script>
+<script type="text/javascript" src="datajs/user_menu.js"></script>
+	
+	<script type="text/javascript" src="datajs/jq.js"></script>
+    
+	
+</head>
+<body id="mobile_wrap">
+<script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+	 
+    <script type="text/javascript">
+        app.initialize();
+    </script>
+<div id="GCM_ID" style="display:none;"></div>
+    <div class="statusbar-overlay"></div>
+
+    <div class="panel-overlay"></div>
+
+    <div class="panel panel-left panel-reveal">
+			<nav class="sidebar-nav">
+			<ul id="sidemenu">
+			
+			</ul>
+			</nav>
+    </div>
+
+    <div class="panel panel-right panel-reveal">
+      <div class="user_login_info" id="user_info_box">
+	  
+                
+      </div>
+    </div>
+
+    <div class="views">
+
+      <div class="view view-main">
+
+
+
+        <div class="pages">
+
+          <div data-page="index" class="page homepage">
+            <div class="page-content homepagecontent">	
+
+                        <div class="homenavbar">
+                                <h1>Union <span>Church</span></h1>							
+                        </div>
+			
+			<nav class="main-nav">
+			<ul>
+
+			<li class="navbg1"><a href="featured_photo.html" class="navbgtranspink"><img src="images/icons/white/favorites.png" alt="" title="" /><span>Featured</span></a></li>			
+			<li class="navbg2"><a href="service_video.html" class="navbgtransyellow"><img src="images/icons/white/servicevedio.png" alt="" title="" /><span>Service Videos</span></a></li>
+
+			<li class="navbg3"><a href="events.html" class="navbgtransgreen"><img src="images/icons/white/trailer.png" alt="" title="" /><span>Events</span></a></li>				
+			<li class="navbg4"><a href="speaking_engagement.html" class="navbgtransred"><img src="images/icons/white/speaking engagement.png" alt="" title="" /><span>Speaking Engagements</span></a></li>
+
+			<li class="navbg5"><a href="testimonials.html" class="navbgtransblack"><img src="images/icons/white/box.png" alt="" title="" /><span>Testimonials</span></a></li>			
+			<li class="navbg6"><a href="week_sch.html" class="navbgtransblue"><img src="images/icons/white/form.png" alt="" title="" /><span>Weekly Schedule</span></a></li>
+
+			<li class="navbg7"><a href="announcement.html" class="navbgtransyellow"><img src="images/icons/white/message.png" alt="" title="" /><span>Announcement</span></a></li>			
+			<li class="navbg8"><a href="live_stream.html" data-popup=".popup-login" class="navbgtransviolet"><img src="images/icons/white/live.png" alt="" title="" /><span>Live Stream</span></a></li>
+
+			<li class="navbg9"><a href="about.html" class="navbgtransred"><img src="images/icons/white/about.png" alt="" title="" /><span>About</span></a></li>
+      <li class="navbg10"><a href="pastor_speak.html" data-popup=".popup-social" class="navbgtransgreen"><img src="images/icons/white/pasterspeak.png" alt="" title="" /><span>Pastor Speak</span></a></li>
+
+      <li class="navbg11"><a href="support.html"  class="navbgtransviolet"><img src="images/icons/white/supporticon.png" alt="" title="" /><span>Support</span></a></li>
+      <li class="navbg12"><a href="contact.html" data-popup=".popup-social" class="navbgtransyellow"><img src="images/icons/white/contacticon.png" alt="" title="" /><span>Contact</span></a></li>
+
+			</ul>
+			</nav>	    
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Toolbar-->
+        <div class="toolbar">
+              <div class="toolbar-inner">
+              <ul class="toolbar_icons">
+              <li><a href="announcement.html"><img src="images/icons/white/announcement.png" alt="" title="" /></a></li>
+              <li><a href="service_video.html"><img src="images/icons/white/service_video.png" alt="" title="" /></a></li>
+              <li class="active"><a href="index.html"><img src="images/icons/yellow/h.png" alt="" title="" /></a></li>
+              <li ><a href="#" data-popup=".popup-social" class="open-popup"><img src="images/icons/white/shar.png" alt="" title="" /></a></li>
+              <li><a href="contact.html"><img src="images/icons/white/contac.png" alt="" title="" /></a></li>              
+              </ul>
+              </div>  
+        </div>
+
+      </div>
+    </div>
+
+	
+    <!-- Login Popup -->
+    <div class="popup popup-login">
+        <div class="content-block">
+            <h4>LOGIN</h4>
+            <div class="loginform">
+                <form id="LoginForm" method="post">
+                    <input type="text" name="Username" value="" class="form_input required" placeholder="username" />
+                    <input type="password" name="Password" value="" class="form_input required" placeholder="password" />
+                    <div class="forgot_pass"><a href="#" data-popup=".popup-forgot" class="open-popup">Forgot Password?</a></div>
+                    <input type="submit" name="submit" class="form_submit" id="submit" value="SIGN IN" />
+                </form>
+                <div class="signup_bottom">
+                    <p>Don't have an account?</p>
+                    <a href="#" data-popup=".popup-signup" class="open-popup">SIGN UP</a>
+                </div>
+            </div>
+            <div class="close_popup_button">
+                <a href="#" class="close-popup"><img src="images/icons/black/menu_close.png" alt="" title="" /></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Register Popup -->
+    <div class="popup popup-signup">
+        <div class="content-block">
+            <h4>REGISTER</h4>
+            <div class="loginform">
+                <form id="RegisterForm" method="post">
+                    <input type="text" name="Username" value="" class="form_input required" placeholder="Username" />
+                    <input type="text" name="Email" value="" class="form_input required" placeholder="Email" />
+                    <input type="password" name="Password" value="" class="form_input required" placeholder="Password" />
+                    <input type="submit" name="submit" class="form_submit" id="submit" value="SIGN UP" />
+                </form>
+		<h5>- OR REGISTER WITH A SOCIAL ACCOUNT -</h5>
+		<div class="signup_social">
+			<a href="http://www.facebook.com/" class="signup_facebook external">FACEBOOK</a>
+			<a href="http://www.twitter.com/" class="signup_twitter external">TWITTER</a>            
+		</div>		
+            </div>
+            <div class="close_popup_button">
+                <a href="#" class="close-popup"><img src="images/icons/black/menu_close.png" alt="" title="" /></a>
+            </div>
+        </div>
+    </div>
+	
+    <!-- Forgot Password Popup -->
+    <div class="popup popup-forgot">
+        <div class="content-block">
+            <h4>FORGOT PASSWORD</h4>
+            <div class="loginform">
+                <form id="ForgotForm" method="post">
+                    <input type="text" name="Email" value="" class="form_input required" placeholder="email" />
+                    <input type="submit" name="submit" class="form_submit" id="submit" value="RESEND PASSWORD" />
+                </form>
+                <div class="signup_bottom">
+                    <p>Check your email and follow the instructions to reset your password.</p>
+                </div>
+            </div>
+            <div class="close_popup_button">
+                <a href="#" class="close-popup"><img src="images/icons/black/menu_close.png" alt="" title="" /></a>
+            </div>
+        </div>
+    </div>
+	
+    <!-- Social Icons Popup -->
+    <div class="popup popup-social">
+    <div class="content-block">
+      <h4>Social Share</h4>
+      <p>Stay connected with Union Church.</p>
+      <ul class="social_share">
+      <li><a href="http://twitter.com/" class="external"><img src="images/icons/black/twitter.png" alt="" title="" /><span>TWITTER</span></a></li>
+      <li><a href="http://www.facebook.com/" class="external"><img src="images/icons/black/facebook.png" alt="" title="" /><span>FACEBOOK</span></a></li>
+      <li><a href="http://plus.google.com" class="external"><img src="images/icons/black/gplus.png" alt="" title="" /><span>GOOGLE</span></a></li>
+      <li><a href="#" target="_blank" class="external"><img src="images/icons/black/youtube.png" alt="" title="" /><span>YOUTUBE</span></a></li>
+      <li><a href="http://unionchucrch.org.in" target="_blank" class="external"><img src="images/icons/black/website.png" alt="" title="" /><span>VISIT WEBSITE</span></a></li>
+      <li><a href="mailto:support@unionchucrch.org.in" target="_blank" class="external" ><img src="images/icons/black/contact.png" alt="" title="" /><span>EMAIL</span></a></li>
+      
+      </ul>
+      <div class="close_popup_button"><a href="#" class="close-popup"><img src="images/icons/black/menu_close.png" alt="" title="" /></a></div>
+    </div>
+    </div>
+	
+	
+    
+<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.validate.min.js" ></script>
+<script type="text/javascript" src="js/framework7.js"></script>
+<script type="text/javascript" src="js/jquery.swipebox.js"></script>
+<script type="text/javascript" src="js/jquery.fitvids.js"></script>
+<script type="text/javascript" src="js/email.js"></script>
+<script type="text/javascript" src="js/audio.min.js"></script>
+<script type="text/javascript" src="js/my-app.js"></script>
+  </body>
+</html>
