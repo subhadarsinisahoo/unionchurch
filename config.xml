@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.freshboxoffice.fbo" version="3.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>FBO</name>
+    <name>Union Church</name>
     <description>
-        Official App of Fresh Box Office for ANDROID and IOS 
+        Official App of Union Church 
     </description>
     <author email="support@pocketapp.in" href="http://pocketapp.in">
      PocketApp.in
