@@ -77,7 +77,16 @@
             <label>Email:</label>
             <input type="text" name="ContactEmail" id="ContactEmail" value="" class="form_input required email" />
 			<label>Purpose:</label>
-            <input type="text" name="ContactPurpose" id="ContactPurpose" value="" class="form_input required" />
+			<select name="ContactPurpose" id="ContactPurpose" class="form_input required" style="padding:8px;">
+				<option value="">--select--</option>
+				<option value="Prayer Request">Prayer Request</option>
+				<option value="Apply for Membership">Apply for Membership</option>
+				<option value="Apply for Baptism">Apply for Baptism</option>
+				<option value="Apply for Marriage">Apply for Marriage</option>
+				<option value="Testimony">Testimony</option>
+				<option value="Others">Others</option>
+			</select>
+            <!--<input type="text" name="ContactPurpose" id="ContactPurpose" value="" class="form_input required" />-->
             <label>Message:</label>
             <textarea name="ContactComment" id="ContactComment" class="form_textarea textarea required" rows="" cols=""></textarea>
             <input type="button" name="submit" class="form_submit" id="insert" value="Send" onClick="sud_data()" />
