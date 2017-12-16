@@ -97,11 +97,11 @@ function load_more() {
 				var article_image=field.article_image;
 				var movie_or_serial_type=field.movie_or_serial_type;
 				var dir = "";
-				if(movie_or_serial_type == "movie") {
+				//if(movie_or_serial_type == "movie") {
 					dir = "movie_images";
-				} else {
+				/*} else {
 					dir = "serial_images";
-				}
+				}*/
 				img_value = ImgURL+dir+"/"+article_image;
 	            $("#listview").append("<li class='swipeout'><div class='swipeout-content item-content'><div class='post_entry'><div class='post_thumb'><img src='"+img_value+"' width='200' alt='' title='' /></div><div class='post_details'><div class='post_category'><a href='article-details.html?"+ article_id + "'>"+ article_title + "</a></div><span style='font-size:12px;'> <i class='fa fa-calendar'></i> "+post_date+"</span></div></div></div></li>");
 				

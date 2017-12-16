@@ -32,11 +32,11 @@ $(document).ready(function()
 				
 				var dir = "";
 				
-				if(movie_or_serial_type == "movie") {
+				/*if(movie_or_serial_type == "movie") {*/
 					dir = "movie_images";
-				} else {
+				/*} else {
 					dir = "serial_images";
-				}
+				}*/
 				
 				img_value = ImgURL+dir+"/"+cover_image;
 				

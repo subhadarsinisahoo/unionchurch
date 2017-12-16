@@ -6,6 +6,7 @@
             var name=$("#ContactName").val();
             var email=$("#ContactEmail").val();
             var comment=$("#ContactComment").val();
+			var purpose=$("#ContactPurpose").val();
 			
 			var atpos = email.indexOf("@");
 			var dotpos = email.lastIndexOf(".");
@@ -14,7 +15,7 @@
 				return false;
 			}
 			
-            var dataString="name="+name+"&email="+email+"&comment="+comment+"&mode=insert";
+            var dataString="name="+name+"&email="+email+"&purpose="+purpose+"&comment="+comment+"&mode=insert";
 			//alert("http://swsinc.in/FBO/phonegap/insert_content_review.php?"+dataString);
             if($.trim(name).length>0 & $.trim(comment).length>0 & $.trim(email).length>0)
             {
@@ -33,6 +34,7 @@
                             $("#insert").val('submit');
 							$("#ContactName").val('') ;
 							$("#ContactEmail").val('') ;
+							$("#ContactPurpose").val('') ;
 							$("#ContactComment").val('') ;
                         }
                         else if(data=="error")
@@ -41,6 +43,7 @@
 							 $("#insert").val('submit');
 							$("#ContactName").val('') ;
 							$("#ContactEmail").val('') ;
+							$("#ContactPurpose").val('') ;
 							$("#ContactComment").val('') ;
                         } 
 						 else if(data=="duplicate")

@@ -19,7 +19,7 @@ function load_data(offset) {
 	extraurl="&movie_id="+a_id;
 	}*/
 	
-	var url=BaseURL+"photos.php?offset="+offset+extraurl;
+	var url=BaseURL+"photos.php?offset="+offset+extraurl; //alert(url);
 		$.getJSON(url,function(result){ //alert(result);
 					//$("#loader").hide();							
 			console.log(result);
@@ -43,11 +43,11 @@ function load_data(offset) {
 				
 				var dir = "";
 				
-				if(movie_or_serial_type == "movie") {
+				/*if(movie_or_serial_type == "movie") {*/
 					dir = "movie_images";
-				} else {
+				/*} else {
 					dir = "serial_images";
-				}
+				}*/
 				
 				img_value = ImgURL+dir+"/"+photo_path; //alert(img_value);
 	           $("#photoslist").append('<li><a rel="gallery-3" href="'+img_value+'" title="'+photo_title+'" class="swipebox"><img width="120" height="100" src="'+img_value+'" alt="image"/></a></li>');
