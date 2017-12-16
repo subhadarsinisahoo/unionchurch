@@ -1,2 +1,2 @@
-var BaseURL = "http://pocketapp.in/unionchurch/phonegap/";
-var ImgURL = "http://pocketapp.in/unionchurch/";
+var BaseURL = "https://pocketapp.in/unionchurch/phonegap/";
+var ImgURL = "https://pocketapp.in/unionchurch/";
