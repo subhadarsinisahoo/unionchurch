@@ -14,13 +14,13 @@
 <link type="text/css" rel="stylesheet" href="css/swipebox.css" />
 <link type="text/css" rel="stylesheet" href="css/animations.css" />
 <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,900' rel='stylesheet' type='text/css'>
+<link type="text/css" rel="stylesheet" href="custom_css/custom_style.css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script type="text/javascript" src="datajs/globalvar.js"></script>
 <script type="text/javascript" src="datajs/jq.js"></script>
-<script type="text/javascript" src="datajs/article_details.js"></script>
+<script type="text/javascript" src="datajs/s_e.js"></script>	
 <script type="text/javascript" src="datajs/leftmenu.js"></script>
 <script type="text/javascript" src="datajs/user_menu.js"></script>
-<script type="text/javascript" src="datajs/submit_content_review.js"></script>
 </head>
 <body id="mobile_wrap">
 
@@ -36,20 +36,15 @@
     </div>
 
     <div class="panel panel-right panel-reveal">
-      <div class="user_login_info" id="user_info_box">
-	  
-               
-      </div>
+      <div class="user_login_info" id="user_info_box">      </div>
     </div>
 
     <div class="views">
 
       <div class="view view-main">
 
-
-
-        <div class="pages">
-  <div data-page="blogsingle" class="page no-toolbar no-navbar">
+		<div class="pages">
+  <div data-page="shop" class="page no-toolbar no-navbar">
     <div class="page-content">
     
 	<div class="navbarpages">
@@ -59,93 +54,50 @@
 		<a href="#" data-panel="left" class="open-panel">
 			<div class="navbar_right"><img src="images/icons/red/menu.png" alt="" title="" /></div>
 		</a>
-		<a href="index.html" data-panel="right" class="open-panel">
-			<div class="navbar_right whitebg"><img src="images/icons/red/home.png" alt="" title="" /></div>
-		</a>					
-	</div>
-	
+		<a href="index.html">
+			<div class="navbar_right whitebg"><img src="images/red/black/home.png" alt="" title="" /></div>
+		</a>	</div>
+     
      <div id="pages_maincontent">
       
-      <a href="events.html" class="backto"><img src="images/icons/red/back.png" alt="" title="" /></a>
-      <h2 class="blog_title" id="post_title"></h2>
-	  
-                  <!-- Slider -->
-                 <div class="swiper-container-pages swiper-init" data-effect="slide" data-pagination=".swiper-pagination">
-                    <div class="swiper-wrapper">
-                    
-                      <div class="swiper-slide" id="post_image">
-			
-                       </div>
-                      <!--<div class="swiper-slide">
-			<img src="images/page_photo2.jpg" alt="" title="" />
-                       </div>
-                      <div class="swiper-slide">
-			<img src="images/page_photo3.jpg" alt="" title="" />
-                       </div>	-->	   
-					   
-                    </div>
-                    <div class="swiper-pagination"></div>
-                  </div>	
-<div class="page_single layout_fullwidth_padding">	
-          <div class="post_single">
-          <p id="post_body" style="text-align:justify;">
-          
-          </p>
-            <span class="post_date" id="post_date">24.02.2015</span>
-            <span class="post_author" id="post_author"> <!--<a href="#">By Fresh Box Office Network</a>--></span>
-            <span class="post_comments" id="post_comments"><a id="count_comments" href="#">0</a></span> <span id="rating"></span> 
-          </div>
-	 <!--<a href="#" data-popup=".popup-social" class="button_full btmint open-popup">SHARE THIS POST</a>-->
-          
-          <div class="buttons-row">
-              <!--href="#tab1"-->  <a onClick="show_tab('#tab1','#tab2','#but1','#but2')" id="but1"  class="tab-link active button">Review this Article</a>
-             <!-- href="#tab2"-->  <a onClick="show_tab('#tab2','#tab1','#but2','#but1')" id="but2" class="tab-link button">Reviews</a>
-          </div>
-          
-          <div class="tabs-animated-wrap">
-                <div class="tabs">
-                      <div id="tab1" class="tab active">
-                            <div class="contactform">
-                            <form id="CommentForm"  action="">
-							<input type="hidden" id="review_type" value="article">
-							<input type="hidden" id="review_for_id" value="">
-                            <label>Name:</label>
-                            <input type="text" name="CommentName" id="CommentName" value="" class="form_input" />
-                            <label>Email:</label>
-                            <input type="text" name="CommentEmail" id="CommentEmail" value="" class="form_input" />
-							<label>Rating:</label>
-							<span class="rating" style="font-size:40px;"> 
-																											
-							<i id="s1"  class="fa fa-star-o" onClick="fill_star('1','full')"></i>&nbsp;
-																											<i id="s2"  class="fa fa-star-o" onClick="fill_star('2','full')"></i>&nbsp;
-																											<i id="s3"  class="fa fa-star-o" onClick="fill_star('3','full')"></i>&nbsp;
-																											<i id="s4"  class="fa fa-star-o" onClick="fill_star('4','full')"></i>&nbsp;
-																											<i id="s5"  class="fa fa-star-o" onClick="fill_star('5','full')"></i>
-					       </span>
-                            <input type="hidden" name="rating" id="rating" value="" class="form_input" />
-                            <label>Comment:</label>
-                            <textarea name="Comment" id="Comment" class="form_textarea" rows="" cols=""></textarea>
-                            <input type="button" name="submit" class="form_submit" id="insert" onClick="sud_data()" value="Submit" />
-                            </form>
-                            </div>
-                      </div>
-
-                      <div id="tab2" class="tab" style="min-height:300px;">
-                            <ul class="comments" id="comments">
-                                
-                                <div class="clear"></div>
-                            </ul>
-                      </div> 
-                </div>
-          </div>
-		  
- </div>     
+     <h2 class="page_title">Speaking Engagement</h2>
       
+	<div class="page_single layout_fullwidth_padding">
+      <img src="images/loader.gif" style="display:block;" id="loader" />
+      <ul class="shop_items" id="listview">
+      
+          <!--<li>
+          <div class="shop_thumb"><a href="shop-item.html"><img src="images/photos/photo1.jpg" alt="" title="" /></a></div>
+          <div class="shop_item_details">
+          <h4><a href="movie-detail.html">Movie 1</a></h4>
+          <div class="shop_item_price">Starcast</div>
+            <div class="item_qnty_shop">
+                <div class="box_div"><strong>Opening day:</strong></div>
+				<div class="box_div"><strong>End of week:</strong></div>
+				<div class="box_div"><strong>Week 1:</strong></div>
+				<div class="box_div"><strong>Lifetime:</strong></div>
+            </div>
+          <a href="#" ><img src="images/icons/black/blog.png" alt="" title="" style="width:20px;" />Mar 5 2017</a> 
+          <a href="#" class="open-popup shopfav"><img src="images/icons/black/message.png" alt="" title="" />5</a>
+		  <br>
+		  <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>
+          </div>
+          </li>--> 
+      </ul>
+      <input type="hidden" id="next_off" value="">
+	   <input type="hidden" id="prev_off" value="">
+	  
+          <div class="shop_pagination">
+          <a href="#" class="prev_shop" onClick="load_prev()">PREV PAGE</a>
+          <!--<span class="shop_pagenr">1/37</span>-->
+          <a href="#" class="next_shop" onClick="load_next()">NEXT PAGE</a>          </div>
+      </div>
+      </div>
     </div>
   </div>
-</div>
-</div>
+</div>        
 
+        
         <!-- Bottom Toolbar-->
         <div class="toolbar">
               <div class="toolbar-inner">
@@ -158,7 +110,6 @@
               </ul>
               </div>  
         </div>
-
       </div>
     </div>
 
@@ -176,12 +127,10 @@
                 </form>
                 <div class="signup_bottom">
                     <p>Don't have an account?</p>
-                    <a href="#" data-popup=".popup-signup" class="open-popup">SIGN UP</a>
-                </div>
+                    <a href="#" data-popup=".popup-signup" class="open-popup">SIGN UP</a>                </div>
             </div>
             <div class="close_popup_button">
-                <a href="#" class="close-popup"><img src="images/icons/black/menu_close.png" alt="" title="" /></a>
-            </div>
+                <a href="#" class="close-popup"><img src="images/icons/black/menu_close.png" alt="" title="" /></a>            </div>
         </div>
     </div>
 
@@ -199,12 +148,10 @@
 		<h5>- OR REGISTER WITH A SOCIAL ACCOUNT -</h5>
 		<div class="signup_social">
 			<a href="http://www.facebook.com/" class="signup_facebook external">FACEBOOK</a>
-			<a href="http://www.twitter.com/" class="signup_twitter external">TWITTER</a>            
-		</div>		
+			<a href="http://www.twitter.com/" class="signup_twitter external">TWITTER</a>		</div>		
             </div>
             <div class="close_popup_button">
-                <a href="#" class="close-popup"><img src="images/icons/black/menu_close.png" alt="" title="" /></a>
-            </div>
+                <a href="#" class="close-popup"><img src="images/icons/black/menu_close.png" alt="" title="" /></a>            </div>
         </div>
     </div>
 	
@@ -222,11 +169,16 @@
                 </div>
             </div>
             <div class="close_popup_button">
-                <a href="#" class="close-popup"><img src="images/icons/black/menu_close.png" alt="" title="" /></a>
-            </div>
+                <a href="#" class="close-popup"><img src="images/icons/black/menu_close.png" alt="" title="" /></a>            </div>
         </div>
     </div>
+
+
+    
 	
+
+
+
     <!-- Social Icons Popup -->
     <div class="popup popup-social">
     <div class="content-block">

@@ -8,7 +8,7 @@
 <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
 <link href="images/apple-touch-startup-image-320x460.png" media="(device-width: 320px)" rel="apple-touch-startup-image">
 <link href="images/apple-touch-startup-image-640x920.png" media="(device-width: 320px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
-<title>Fresh Box Office - Ollywood and Bollywood Online Portal</title>
+<title>Union Church Online</title>
 <link rel="stylesheet" href="css/framework7.css">
 <link rel="stylesheet" href="style.css">
 <link type="text/css" rel="stylesheet" href="css/swipebox.css" />
@@ -17,10 +17,10 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script type="text/javascript" src="datajs/globalvar.js"></script>
 <script type="text/javascript" src="datajs/jq.js"></script>
-<script type="text/javascript" src="datajs/article_details.js"></script>
+
+<script type="text/javascript" src="datajs/ann.js"></script>	
 <script type="text/javascript" src="datajs/leftmenu.js"></script>
 <script type="text/javascript" src="datajs/user_menu.js"></script>
-<script type="text/javascript" src="datajs/submit_content_review.js"></script>
 </head>
 <body id="mobile_wrap">
 
@@ -49,7 +49,7 @@
 
 
         <div class="pages">
-  <div data-page="blogsingle" class="page no-toolbar no-navbar">
+  <div data-page="blog" class="page no-toolbar no-navbar">
     <div class="page-content">
     
 	<div class="navbarpages">
@@ -59,93 +59,36 @@
 		<a href="#" data-panel="left" class="open-panel">
 			<div class="navbar_right"><img src="images/icons/red/menu.png" alt="" title="" /></div>
 		</a>
-		<a href="index.html" data-panel="right" class="open-panel">
+		<a href="index.html">
 			<div class="navbar_right whitebg"><img src="images/icons/red/home.png" alt="" title="" /></div>
 		</a>					
 	</div>
 	
      <div id="pages_maincontent">
       
-      <a href="events.html" class="backto"><img src="images/icons/red/back.png" alt="" title="" /></a>
-      <h2 class="blog_title" id="post_title"></h2>
-	  
-                  <!-- Slider -->
-                 <div class="swiper-container-pages swiper-init" data-effect="slide" data-pagination=".swiper-pagination">
-                    <div class="swiper-wrapper">
-                    
-                      <div class="swiper-slide" id="post_image">
+      <h2 class="page_title">Announcement</h2>
+     <div class="page_single layout_fullwidth_padding">  
+   
+            <div class="list-block">
+               <img src="images/loader.gif" style="display:block;" id="loader" />
+              <ul class="posts" id="listview">
+                
+              </ul>
+              <input type="hidden" id="next_off" value="" />
+            <div onClick="load_more()" id="loadMore">LOAD MORE</div> 
+            <div id="showLess">END</div> 
+            </div>
 			
-                       </div>
-                      <!--<div class="swiper-slide">
-			<img src="images/page_photo2.jpg" alt="" title="" />
-                       </div>
-                      <div class="swiper-slide">
-			<img src="images/page_photo3.jpg" alt="" title="" />
-                       </div>	-->	   
-					   
-                    </div>
-                    <div class="swiper-pagination"></div>
-                  </div>	
-<div class="page_single layout_fullwidth_padding">	
-          <div class="post_single">
-          <p id="post_body" style="text-align:justify;">
-          
-          </p>
-            <span class="post_date" id="post_date">24.02.2015</span>
-            <span class="post_author" id="post_author"> <!--<a href="#">By Fresh Box Office Network</a>--></span>
-            <span class="post_comments" id="post_comments"><a id="count_comments" href="#">0</a></span> <span id="rating"></span> 
-          </div>
-	 <!--<a href="#" data-popup=".popup-social" class="button_full btmint open-popup">SHARE THIS POST</a>-->
-          
-          <div class="buttons-row">
-              <!--href="#tab1"-->  <a onClick="show_tab('#tab1','#tab2','#but1','#but2')" id="but1"  class="tab-link active button">Review this Article</a>
-             <!-- href="#tab2"-->  <a onClick="show_tab('#tab2','#tab1','#but2','#but1')" id="but2" class="tab-link button">Reviews</a>
-          </div>
-          
-          <div class="tabs-animated-wrap">
-                <div class="tabs">
-                      <div id="tab1" class="tab active">
-                            <div class="contactform">
-                            <form id="CommentForm"  action="">
-							<input type="hidden" id="review_type" value="article">
-							<input type="hidden" id="review_for_id" value="">
-                            <label>Name:</label>
-                            <input type="text" name="CommentName" id="CommentName" value="" class="form_input" />
-                            <label>Email:</label>
-                            <input type="text" name="CommentEmail" id="CommentEmail" value="" class="form_input" />
-							<label>Rating:</label>
-							<span class="rating" style="font-size:40px;"> 
-																											
-							<i id="s1"  class="fa fa-star-o" onClick="fill_star('1','full')"></i>&nbsp;
-																											<i id="s2"  class="fa fa-star-o" onClick="fill_star('2','full')"></i>&nbsp;
-																											<i id="s3"  class="fa fa-star-o" onClick="fill_star('3','full')"></i>&nbsp;
-																											<i id="s4"  class="fa fa-star-o" onClick="fill_star('4','full')"></i>&nbsp;
-																											<i id="s5"  class="fa fa-star-o" onClick="fill_star('5','full')"></i>
-					       </span>
-                            <input type="hidden" name="rating" id="rating" value="" class="form_input" />
-                            <label>Comment:</label>
-                            <textarea name="Comment" id="Comment" class="form_textarea" rows="" cols=""></textarea>
-                            <input type="button" name="submit" class="form_submit" id="insert" onClick="sud_data()" value="Submit" />
-                            </form>
-                            </div>
-                      </div>
-
-                      <div id="tab2" class="tab" style="min-height:300px;">
-                            <ul class="comments" id="comments">
-                                
-                                <div class="clear"></div>
-                            </ul>
-                      </div> 
-                </div>
-          </div>
-		  
- </div>     
+       </div>		
+      
+      </div>
+      
       
     </div>
   </div>
 </div>
-</div>
 
+        
         <!-- Bottom Toolbar-->
         <div class="toolbar">
               <div class="toolbar-inner">
@@ -156,11 +99,14 @@
               <li ><a href="#" data-popup=".popup-social" class="open-popup"><img src="images/icons/white/shar.png" alt="" title="" /></a></li>
               <li><a href="contact.html"><img src="images/icons/white/contac.png" alt="" title="" /></a></li>              
               </ul>
-              </div>  
+              </div>   
         </div>
 
       </div>
     </div>
+
+
+    
 
 	
     <!-- Login Popup -->
