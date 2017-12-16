@@ -77,7 +77,7 @@ var app = {
 			$("#GCM_ID").html('GCM ID...'+data.registrationId);
 			//alert('GCM ID...'+data.registrationId);
 			var dataString="regID="+data.registrationId;
-			var BaseURL = "https://freshboxoffice.com/phonegap/";
+			var BaseURL = "https://pocketapp.in/unionchurch/phonegap/";
 			$.ajax({
                     type: "POST",
                     url: BaseURL+"insert_gcm_reg_id.php?",
