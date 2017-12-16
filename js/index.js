@@ -75,7 +75,7 @@ var app = {
 			
 			////////////database store registration //////////
 			$("#GCM_ID").html('GCM ID...'+data.registrationId);
-			//alert('GCM ID...'+data.registrationId);
+			alert('GCM ID...'+data.registrationId);
 			var dataString="regID="+data.registrationId;
 			var BaseURL = "https://pocketapp.in/unionchurch/phonegap/";
 			$.ajax({
